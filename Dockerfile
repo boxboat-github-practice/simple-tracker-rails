@@ -15,9 +15,9 @@ RUN apk update && \
 WORKDIR /usr/src/myapp
 
 COPY Gemfile ./
-RUN gem install bundler
+RUN gem install bundler -v 2.3.26
 RUN bundle config build.nokogiri --use-system-libraries && \
-    bundle install --jobs=4 --retry=10 --clean
+    bundle install --jobs=4 --retry=10
 
 COPY . ./
 RUN chmod +x bin/rails
