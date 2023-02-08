@@ -14,12 +14,12 @@ bundle install
 This sample was generated with [openapi-generator](https://github.com/openapitools/openapi-generator) project.
 
 ```
-bin/rake db:create db:migrate
-bin/rails s
+bundle exec rake db:create db:migrate
+bundle exec rails s
 ```
 
 To list all your routes, use:
 
 ```
-bin/rake routes
+bundle exec rake routes
 ```
