@@ -1,0 +1,18 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: simple-tracker-rails
+  annotations:
+    github.com/project-slug: boxboat-backstage/simple-tracker-rails
+    backstage.io/techdocs-ref: dir:.
+  tags:
+    - ruby
+    - rails
+    - web-client
+spec:
+  type: frontend
+  system: simple-tracker
+  owner: group:fishdank
+  lifecycle: experimental
+  consumesApis:
+    - simple-tracker-api
